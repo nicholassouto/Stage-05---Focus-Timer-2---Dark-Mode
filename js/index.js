@@ -64,7 +64,11 @@ const controls = Controls(
   buttonRainNight2,
   buttonMinus,
   buttonPlus,
-  buttonStop
+  buttonStop,
+  rainSlider,
+  forestSlider,
+  cafeteriaSlider,
+  fireplaceSlider
 );
 
 const sound = Sound();

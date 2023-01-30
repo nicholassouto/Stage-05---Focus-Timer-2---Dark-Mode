@@ -25,7 +25,11 @@ export function Controls(
   buttonRainNight2,
   buttonMinus,
   buttonPlus,
-  buttonStop
+  buttonStop,
+  rainSlider,
+  forestSlider,
+  cafeteriaSlider,
+  fireplaceSlider
 ) {
   let dayNight = 0;
   function Play() {
@@ -121,6 +125,10 @@ export function Controls(
     buttonStop.classList.remove("night-time-controler");
     buttonPlus.classList.remove("night-time-controler");
     buttonMinus.classList.remove("night-time-controler");
+    rainSlider.classList.toggle("night-slider");
+    forestSlider.classList.toggle("night-slider");
+    cafeteriaSlider.classList.toggle("night-slider");
+    fireplaceSlider.classList.toggle("night-slider");
   }
 
   function Night() {
@@ -148,6 +156,10 @@ export function Controls(
     buttonStop.classList.add("night-time-controler");
     buttonPlus.classList.add("night-time-controler");
     buttonMinus.classList.add("night-time-controler");
+    rainSlider.classList.toggle("night-slider");
+    forestSlider.classList.toggle("night-slider");
+    cafeteriaSlider.classList.toggle("night-slider");
+    fireplaceSlider.classList.toggle("night-slider");
   }
 
   function resetAll() {

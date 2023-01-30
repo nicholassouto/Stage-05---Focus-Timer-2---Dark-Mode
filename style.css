@@ -6,7 +6,8 @@
 
 :root {
   font-size: 62.5%;
-  --fc-default: hsl(240, 7%, 21%);
+  --fc-sliderBg: hsl(240, 7%, 21%);
+  --fc-nightSliderBg: white;
 }
 
 body {
@@ -104,14 +105,19 @@ button {
   appearance: none;
   background: transparent;
   cursor: pointer;
-  background: var(--fc-default);
+  background: var(--fc-sliderBg);
   width: 8.5rem;
   margin-left: 2rem;
   height: 0.5rem;
   accent-color: black;
 }
 
-.night-time-controler svg path{
+.night-time-controler svg path {
   stroke: white;
   fill: white;
+}
+
+.night-slider {
+  background: var(--fc-nightSliderBg);
+  accent-color: white;
 }
